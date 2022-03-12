@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Imgur</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <a class="back" href="index.html">
+        <<<-Back to Imgur</a>
+            <img class="logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Imgur_Logo_Light.svg/1280px-Imgur_Logo_Light.svg.png">
+            <div class="main">
+                <h5 class="link_head">Register with</h5>
+                <div class="links">
+                    <button class="fb"><img src="media/facebook-32.png"></button>
+                    <button class="tw"><img src="media/twitter-32.png"></button>
+                    <button class="ap"><img src="media/apple-32.png"></button>
+                    <button class="google"><img src="media/google-plus-32.png"></button>
+                    <button class="yahoo"><img src="media/yahoo-32.png"></button>
+                </div>
+                <h5 class="h5">or with imgur</h5>
+                <form class="form" id="myForm">
+                    <input class="input" id="users" type="text"value=""  placeholder="Username"><br />
+                    <input class="input" id="email" type="email" value="" placeholder="Email"><br />
+                    <input class="input" id="password" type="password" value="" placeholder="Password"><br />
+                    <input class="input" id="retype" type="password" value="" placeholder="Re-Type Password"><br />
+                    <input class="input" id="number" type="number" value="" placeholder="Phone Number"><br />
+                    <h5 class="link_head">Standard message and data rates may apply.</h5>
+                    <h5 class="link_head">Why do I have to verify my phone?</h5>
+                </form>
+                <button class="next" onclick="registered(event)">Next</button>
+                <a href="signin.html"><button class="signin">Sign in</button></a>
+
+                <script src="index.js"></script>
+            </div>
+</body>
+
+</html>

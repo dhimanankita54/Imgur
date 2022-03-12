@@ -1,0 +1,194 @@
+body {
+    background-color: #141518;
+    font-family: 'Open Sans', sans-serif;
+    color: #f2f2f2;
+}
+
+.back {
+    text-decoration: none;
+    color: #fff;
+    margin: 100px 0 0 20px;
+    font-weight: 700;
+}
+
+.logo {
+    width: 187px;
+    height: 65px;
+    display: block;
+    margin: 30px auto 70px;
+}
+
+.main {
+    margin: auto;
+    width: 24%;
+}
+
+.link_head {
+    color: #fff;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.links {
+    background-color: #2C2F34;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.fb {
+    margin: 0 5px;
+    padding: 7px;
+    border: none;
+    background-color: #212121;
+    border-bottom: 5px solid #7789ff;
+    border-radius: 5px;
+    width: 17%;
+    cursor: pointer;
+}
+
+.fb>img, .tw>img, .ap>img, .google>img, .yahoo>img {
+    width: 20px;
+}
+
+.fb:hover {
+    background-color: #7789ff;
+}
+
+.tw {
+    padding: 7px;
+    margin: 0 5px;
+    border: none;
+    background-color: #212121;
+    border-bottom: 5px solid #4099FF;
+    border-radius: 5px;
+    width: 17%;
+    cursor: pointer;
+}
+
+.tw:hover {
+    background-color: #4099FF;
+}
+
+.ap {
+    padding: 7px;
+    margin: 0 5px;
+    border: none;
+    background-color: #212121;
+    border-bottom: 5px solid white;
+    border-radius: 5px;
+    width: 17%;
+    cursor: pointer;
+}
+
+.ap:hover {
+    background-color: white;
+}
+
+.ap:hover>img {
+    filter: invert(100);
+}
+
+.google {
+    padding: 7px;
+    margin: 0 5px;
+    border: none;
+    background-color: #212121;
+    border-bottom: 5px solid #4285F4;
+    border-radius: 5px;
+    width: 17%;
+    cursor: pointer;
+}
+
+.google:hover {
+    background-color: #4285F4;
+}
+
+.yahoo {
+    padding: 7px;
+    margin: 0 5px;
+    border: none;
+    background-color: #212121;
+    border-bottom: 5px solid #7B0099;
+    border-radius: 5px;
+    width: 17%;
+    cursor: pointer;
+}
+
+.yahoo:hover {
+    background-color: #7B0099;
+}
+
+.h5 {
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    margin: 8px;
+    font-size: 12px;
+}
+
+.h5:before,
+.h5:after {
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    ;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.h5:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.h5:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.form {
+    background-color: #2C2F34;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.input {
+    width: 310px;
+    height: 22px;
+    background-color: #191919;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 7px 0;
+    font-size: .9em;
+}
+
+.signin {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    float: right;
+    margin: 20px 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.next {
+    float: right;
+    margin: 20px 0 10px 10px;
+    padding: 10px;
+    width: 23%;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #5c69ff;
+    border: none;
+    cursor: pointer;
+}

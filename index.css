@@ -1,0 +1,364 @@
+body {
+    font-family: Nova ExtraBold, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+#cover {
+    background: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -8px;
+}
+
+#header {
+    padding: 20px 10px 0 10px;
+}
+
+#heading {
+    text-align: center;
+}
+
+#heading h4 {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-size: 25px;
+    color: #B3E5FC;
+    font-weight: bold;
+}
+
+#container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#tags_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tags_head h4 {
+    font-size: 20px;
+    color: #9E9E9E;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#tags_head>button {
+    font-size: 20px;
+    color: #9E9E9E;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+#tag_wall {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-height: 170px;
+    transition: max-height 0.3s linear;
+    overflow-y: hidden;
+}
+
+#tag_wall.expanded {
+    max-height: 500px;
+}
+
+.tag_div {
+    border: none;
+    color: #CFD8DC;
+    width: 110px;
+    height: 148px;
+    overflow-wrap: break-word;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(50, 141, 103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tag_div:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.tag_div>h5 {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 5px 10px 0 10px;
+    padding: 0;
+}
+
+.tag_div>p {
+    margin: 0 10px 10px 10px;
+    padding: 2px;
+    font-size: 13px;
+}
+
+#navbar {
+    padding-top: 15px;
+    display: flex;
+    position: fixed;
+    transition: all .5s ease-in-out;
+    background: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+    box-shadow: 1px 1px 3px #190b29;
+}
+
+#logo {
+    width: 8%;
+    margin: 0 10px 10px 10px;
+    cursor: pointer;
+}
+
+#new_post {
+    background-color: #66BB6A;
+    border: none;
+    width: 8%;
+    height: 35px;
+    margin: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#search {
+    width: 30%;
+    height: 22px;
+    margin-top: 5px;
+    margin-left: 10%;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 35px 8px 10px;
+    letter-spacing: 0.4px;
+    background-color: rgba(255, 255, 255, 0.25);
+    opacity: 0.8;
+    color: rgb(255, 255, 255)
+}
+
+#search::placeholder {
+    color: rgb(182, 180, 180);
+}
+
+#ad {
+    margin-left: 5px;
+    margin-top: 6px;
+    width: 8%;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #6432f9;
+}
+
+.icon {
+    margin: 12px 18px 18px 10%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#signup{
+    background-color: #66BB6A;
+    border: none;
+    width: 100px;
+    height: 35px;
+    margin: 6px 2px 6px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#sigin{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 15px 20px 0 25px;
+}
+
+#tag_img {
+    width: 100%;
+    height: 58px;
+    border-radius: 5px;
+}
+
+#search_results {
+    width: 30%;
+    margin-left: 28%;
+    padding: 52px 17px 0 17px;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: #263238;
+    max-height: 370px;
+    overflow: auto;
+    color: white;
+    scroll-behavior: smooth;
+    border-radius: 5px;
+}
+
+#results {
+    padding: 10px;
+    display: flex;
+    height: 32px;
+    border-bottom: 2px solid white;
+
+}
+
+#content_header {
+    background: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+    color: #9E9E9E;
+    margin: -8px;
+    padding: 10px;
+}
+
+#content_header>h4 {
+    margin-top: 10px;
+    padding: 0;
+}
+
+#content {
+    background-color: #263238;
+    margin: -8px;
+}
+
+#content_wall {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    /* gap: 5px; */
+    background-color: #263238;
+    padding: 8px;
+}
+
+#content_div {
+    height: auto;
+    width: 22%;
+    color: #9E9E9E;
+    margin: 5px 1%;
+    border: 1px solid #181f22;
+    box-shadow: 1px 1px 3px #190b29;
+    border-radius: 5px;
+}
+
+#content_div:hover {
+    box-shadow: 5px 5px 3px #190b29;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+#content_div>img {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+#content_div>h5 {
+    margin: 10px;
+    text-align: center;
+}
+
+#footer {
+    display: flex;
+    margin: 0 -8px -8px -8px;
+    background-color: #263238;
+    color: #9E9E9E;
+    list-style: none;
+    /* gap: 2%; */
+}
+
+#footer>button {
+    margin-left: 7%;
+    background-color: #3f4d53;
+    color: #9E9E9E;
+    font-weight: 700;
+    height: 60px;
+    width: 10%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#footer>li {
+    margin: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
